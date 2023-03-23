@@ -1,16 +1,26 @@
-Authorization Code Flow Walkthrough
-=======
+### API Authorization with flask
+
 
 How to do an authorization code flow, through Flask and Python.
 
-##Step 1
-Fill in your credentials in main.py. This includes the CLIENT_ID and CLIENT_SECRET, which is left blank. You can obtain this by going to [Spotify Developers](https://developer.spotify.com/my-applications/#!/).
+## Usage
+
+### Install dependencies
+- flask
+- requests
 
 
-##Step 2
-Be sure that your redirect uri, inside your application page in the Spotify Developers website is "http://127.0.0.1:8080/callback/q".
+
+Fill in your credentials in app.py. This includes the **CLIENT_ID** and **CLIENT_SECRET**, which is left blank. You can obtain this by going to [Spotify Developers](https://developer.spotify.com/my-applications/#!/).
 
 
-##Step 3
-To see that it works, simply run the application by running '''python main.py''', and point your browser to http://127.0.0.1:8080.
+run the application and creathe the endpoints you want:
 
+```bash
+# run the app
+python3 ./app.py
+```
+
+## Project schema
+
+![Basic architecture schema](/assets/spotify_flask.png)
